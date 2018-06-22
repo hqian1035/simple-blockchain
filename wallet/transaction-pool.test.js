@@ -32,7 +32,6 @@ describe('TransactionPool', () => {
         
         beforeEach(() => {
             validTransactions = [...tp.transactions];
-            console.log(validTransactions);
             for (let i = 0; i < 6; i++) {
                 wallet = new Wallet();
                 transaction = wallet.createTransaction('r4nd-4dr355', 30, tp);
