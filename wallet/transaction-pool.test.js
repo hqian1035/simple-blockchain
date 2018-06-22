@@ -31,7 +31,8 @@ describe('TransactionPool', () => {
         let validTransactions;
         
         beforeEach(() => {
-            validTransaction = [...tp.transactions];
+            validTransactions = [...tp.transactions];
+            console.log(validTransactions);
             for (let i = 0; i < 6; i++) {
                 wallet = new Wallet();
                 transaction = wallet.createTransaction('r4nd-4dr355', 30, tp);
@@ -48,7 +49,7 @@ describe('TransactionPool', () => {
         });
         
         it('grabs valid transactions', () => {
-            expect(tp.validTransactions()).toEqual(validTransactions);
+            expect(tp.validTransaction()).toEqual(validTransactions);
         });
     });
 })
