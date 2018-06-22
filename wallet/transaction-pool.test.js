@@ -27,7 +27,7 @@ describe('TransactionPool', () => {
             .not.toEqual(oldTransaction);
     });
     
-    describe('mixing valid and corrupt transactions', ()=> {
+    describe('mixing valid and corrupt transactions', () => {
         let validTransactions;
         
         beforeEach(() => {
