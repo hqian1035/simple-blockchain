@@ -48,7 +48,7 @@ describe('TransactionPool', () => {
         });
         
         it('grabs valid transactions', () => {
-            expect(tp.valideTransactions()).toEqual(validTransactions);
+            expect(tp.validTransactions()).toEqual(validTransactions);
         });
     });
 })
